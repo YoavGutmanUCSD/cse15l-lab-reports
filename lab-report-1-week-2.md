@@ -1,3 +1,3 @@
 # Github code
 
-![Github code](./Code.png)
+![Github code](./Code.PNG)
