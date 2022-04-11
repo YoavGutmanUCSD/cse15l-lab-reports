@@ -44,7 +44,7 @@ If everything went well, you will see a message similar to this, as well as a hu
 This server, as well as the vast majority of servers in general, run something in the Unix family and usually a Linux distribution.
 Try running these commands:
 
-![Unix commands](Unix_command_cheatsheet)
+![Unix commands](Unix_command_cheatsheet.jpg)
 
 Bash scripting is turing-complete and can do anything you want, including something like this:
 
