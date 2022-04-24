@@ -22,7 +22,7 @@
 
 # Github code
 
-Go to [Lab Report 1](lab-report-1-week-2.html) to find Github code
+Go to [Not Lab Report 1](not-lab-report-1-week-2.html) to find Github code
 
 # Numbers
 
@@ -37,3 +37,9 @@ Go to [Lab Report 1](lab-report-1-week-2.html) to find Github code
 # Quotes
 
 > "Y'know, it's very difficult to verify quotes online. They could be easily made up!" --Winston Churchill
+
+# Lab Reports
+
+[Lab report 1](Week2LabReport.html)
+
+[Lab report 2](Week4LabReport2.html)
