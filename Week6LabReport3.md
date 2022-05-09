@@ -48,7 +48,7 @@ This took me so long to troubleshoot! I did the following things to get it to wo
 
 ## Show copying your whole markdown-parse directory to your ieng6 account.
 
-![](scp_r_run_mdparse.PNG)
+![](scp_r_mdparse.PNG)
 
 ## Show logging into your ieng6 account after doing this and compiling and running the tests for your repository.
 
