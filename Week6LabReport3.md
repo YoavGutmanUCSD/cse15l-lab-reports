@@ -28,7 +28,20 @@ This is the `scp -r` demonstration. It shows a working usage of `scp`, however, 
 
 ## Show running git commands to commit and push a change to Github while logged into your ieng6 account.
 
+![](ssh_git_push.PNG)
+
+This took me so long to troubleshoot! I did the following things to get it to work (this is for myself):
+
+1. `eval $(ssh-agent)` to enable the next command
+2. `ssh-add ~/.ssh/id_rsa_git` to add the key
+4. `ssh -T git@github.com` to verify the key
+3. `git remote set-url origin git@github.com:<Username>/<Project>.git` to make sure it leads to the right place
+
+30 minutes of work!
+
 ## Show a link for the resulting commit.
+
+[Link for the resulting commit](https://github.com/YoavGutmanUCSD/markdown-parser-2/commit/a0fbdca24ddb21c5cb9559a7150e24fe840d2efc)
 
 
 # Copy whole directories using `scp -r`
