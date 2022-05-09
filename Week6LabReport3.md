@@ -56,6 +56,35 @@ This took me so long to troubleshoot! I did the following things to get it to wo
 
 ## Show (like in the last step of the first lab) combining scp, ;, and ssh to copy the whole directory and run the tests in one line.
 
-![](scp_r_demonstration.png)
+I was able to run the tests, but I ran into an incredibly bizarre bug that prevented me from running the tests successfully in this way. I will explain to you exactly the error I ran into, how I figured out what it was, and my proposed solution.
 
-This is the `scp -r` demonstration from the lab. I have used this before but it applies here perfectly.
+### Preludes
+
+I thought to myself that this should be an easy task, and ran the following command:
+
+`scp -r markdown-parser-2/ ieng6:~/; ssh ieng6 "cd markdown-parser-2; make test"`
+
+This is a combination of the previous two steps, and from my knowledge of the terminal, it should have worked. There are no obvious errors here. Surely enough, the copying worked and the command generated status messages like you'd expect.
+
+![](SCP_Worked.png)
+
+### Discovery
+
+The makefile ran and gave me this output.
+
+![](BizarreError.png)
+
+It seems like the `cd` command worked, since the makefile ran. It also seems like the `-cp` option had the intended effect, since there was no issue with detecting JUnit or bash errors. However, it seems like some of the imports failed, and nothing from Path or Files could work. This was not an issue I encountered when running `make test` during the lab or when already logged into ieng6.
+
+My sister encountered this same exact issue when writing her lab report, so it rules out my computer as being the issue. I tried running the commands again, running them manually, using `make -C`, running a bash script instead of the makefile, and deleting any class files, to no avail.
+
+### Cause determined?
+
+The bash script said something about a java version mismatch. I decided to look into this more deeply. Surely enough, there was a version mismatch. The output of `ssh ieng6 "javac -version"` was "1.8.0_322", while the output of `ssh ieng6` and then `javac -version` was "javac 17.0.2". I subsequently ran the same command on my local machine to check if it were somehow using my local version, and that command *also* gave a different output.
+This might be what's causing the error!
+
+![](DifferentOutputs.png)
+
+![](JavacLocal.png)
+
+Fixing this issue is beyond my capabilities. I have an idea about what the error might be, but no idea *how* this came about, no idea how to fix it, and likely insufficient permissions to try anything as well. I will ask a TA about this issue as soon as I'm able to, but if you (the grader) could answer this one in your feedback, I would be glad. I tried my best, but I can't move further beyond this point on this task.
