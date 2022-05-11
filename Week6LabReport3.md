@@ -18,7 +18,7 @@ I edited it in the default wsl vim installation.
 
 ## Show where the public key you made is stored on Github and in your user account (screenshot).
 
-![](ssh_config_screenshot.PNG)
+![](ssh_storage_loc.PNG)
 
 ## Show where the private key you made is stored on your user account (but not its contents) as a screenshot.
 
