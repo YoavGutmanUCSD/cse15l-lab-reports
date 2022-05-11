@@ -12,7 +12,7 @@ I edited it in the default wsl vim installation.
 
 ## Show an scp command copying a file to your account using just the alias you chose.
 
-![](scp_r_demonstration.png)
+![](scp_demonstration_lr3.png)
 
 This is the `scp -r` demonstration. It shows a working usage of `scp`, however, so I chose to use it here.
 
