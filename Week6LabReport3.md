@@ -14,8 +14,6 @@ I edited it in the default wsl vim installation.
 
 ![](scp_demonstration_lr3.png)
 
-This is the `scp -r` demonstration. It shows a working usage of `scp`, however, so I chose to use it here.
-
 # Setup Github Access from ieng6
 
 ## Show where the public key you made is stored on Github and in your user account (screenshot).
