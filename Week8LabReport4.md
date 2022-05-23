@@ -29,11 +29,30 @@ An ArrayList with the following values:
 
 ### Why?
 
-There is no logic that cares about backticks. Therefore, it will expect "\`google.com" as well.
+There is no logic that cares about backticks. Therefore, it will expect "\`google.com" as well. This does not follow Markdown regulations.
 
 ## Theirs
 
 ### Code
+
+```
+@Test
+public void checkSnippet1() throws IOException{
+
+    String fileName = "s1.md";
+    Path fileName1 = Path.of(fileName);
+    String content = Files.readString(fileName1);
+    ArrayList<String> expected = new ArrayList<String>();
+    // expected.add("url.com");
+
+    expected.add("google.com");
+    expected.add("ucsd.edu");
+
+    assertArrayEquals(expected.toArray(), MarkdownParse.getLinks(content).toArray());
+}
+```
+
+
 
 ### Expected Output
 
