@@ -273,7 +273,7 @@ I think there is a way. You could simply remove every instance of newline betwee
 
 ## Ours
 
-![](OursCodeMakefile)
+![](OursCodeMakefile.png)
 
 ## Theirs
 
