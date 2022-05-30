@@ -46,4 +46,4 @@ Go to [Not Lab Report 1](not-lab-report-1-week-2.html) to find Github code
 
 [Lab report 3](Week6LabReport3.html)
 
-[Lab report 4](Week8LabReport4.html) (It's not done this time! I'm sorry!)
+[Lab report 4](Week8LabReport4.html) 

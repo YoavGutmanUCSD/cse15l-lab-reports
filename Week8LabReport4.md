@@ -268,3 +268,13 @@ For 1 and 2, you would need two new functions to give the index of the closing b
 ## Do you think there is a small (<10 lines) code change that will make your program work for snippet 3 and all related cases that have newlines in brackets and parentheses?
 
 I think there is a way. You could simply remove every instance of newline between open and closed parentheses. As far as I know, there can be multiline links so long as the link itself isn't divided between the first line and the rest of the lines. (First 2 in snippet 3 are valid, others are not). This could be implemented using an if statement, which should be an ordeal of 3 lines.
+
+# Makefile screenshots
+
+## Ours
+
+![](OursCodeMakefile)
+
+## Theirs
+
+![](TheirsCodeMakefile.png)
