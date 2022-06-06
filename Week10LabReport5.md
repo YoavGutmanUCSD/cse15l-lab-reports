@@ -48,6 +48,14 @@ An empty ArrayList (as expected)
 
 ### Reason
 
+My group's code effectively only checks if there is text between parentheses. We forgot to check if there are brackets adjacent to it. That's why it detected a link when it was just the word "demo" in parentheses.
+
+### Fix
+
+In the beginning, right after the definition of the open and closed brackets, the code needs to check if the closing brackets come before the opening brackets, or if it comes right after the opening bracket. Then the code needs to make sure there is no space between parentheses and brackets. That should fix the problem.
+
+![](BeginningOfMyImplementation.PNG)
+
 ## 519.md
 
 ### Expected
